@@ -25,6 +25,7 @@ const SignIn = () => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
+        console.log(formData)
         axios.post('https://agriconnect-vert.vercel.app/api/v1/sign-in', formData)
             .then((response) => {
                 if (response.status === 200) { 
