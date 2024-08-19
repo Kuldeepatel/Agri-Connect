@@ -73,7 +73,7 @@ const ImageUpload = () => {
       formData.append('file', image);
 
       // Send image for disease detection
-      const detectResponse = await axios.post('http://127.0.0.1:5000/api/detect', formData, {
+      const detectResponse = await axios.post('https://agriconnect-vert.vercel.app/api/detect', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
