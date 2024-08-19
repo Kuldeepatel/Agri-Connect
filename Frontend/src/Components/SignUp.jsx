@@ -28,7 +28,7 @@ const SignUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData)
-        axios.post('http://localhost:8000/api/v1/sign-up', formData)
+        axios.post('https://agriconnect-vert.vercel.app/api/v1/sign-up', formData)
             .then((response) => {
                 if (response.status === 201) { 
                     navigate('/home');  
