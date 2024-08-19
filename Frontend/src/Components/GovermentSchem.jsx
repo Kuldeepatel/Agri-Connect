@@ -10,7 +10,7 @@ const GovernmentScheme = () => {
   useEffect(() => {
     const fetchSchemes = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/v1/goverment-schem');
+        const response = await axios.get('https://agriconnect-vert.vercel.app/api/v1/goverment-schem');
         setSchemes(response.data.GovermentSchems); 
         setLoading(false);
       } catch (error) {
